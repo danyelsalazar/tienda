@@ -12,13 +12,13 @@ window.onscroll = function(){
     //  else if(scroll < 20){
     //     header.classList.remove("nav_mod")
     //  }
-}
+};
 
 document.getElementById("btn__menu").addEventListener("click", mostrarMenu);
 
-menu = document.getElementById("header");
-body = document.getElementById("container_all")
-nav = document.getElementById("nav");
+ const menu = document.getElementById("header");
+ const body = document.getElementById("container_all");
+ const nav = document.getElementById("nav");
 
 function mostrarMenu(){
      
@@ -26,7 +26,7 @@ function mostrarMenu(){
     nav.classList.toggle("move_nav");
     body.classList.toggle("move_content");
     
-}
+};
 
 window.addEventListener("resize", function(){
     
@@ -35,7 +35,7 @@ window.addEventListener("resize", function(){
         nav.classList.remove("move_nav");
         body.classList.remove("move_content");
     }
-})
+});
 
 const menuLinks = document.querySelectorAll(".menu a[href^=\"#\"]");
 
@@ -45,4 +45,32 @@ menuLinks.forEach(menuLink =>{
         nav.classList.remove("move_nav");
         body.classList.remove("move_content");
     })
+});
+
+// salir del menu: 
+const main = document.querySelector(".contenido");
+const card = document.querySelector(".row");
+const pieDePagina = document.querySelector("footer");
+
+main.addEventListener("click", ()=>{
+    menu.classList.remove("move_content");
+    nav.classList.remove("move_nav");
+    body.classList.remove("move_content");
+});
+card.addEventListener("click", ()=>{
+    menu.classList.remove("move_content");
+    nav.classList.remove("move_nav");
+    body.classList.remove("move_content");
+});
+pieDePagina.addEventListener("click", ()=>{
+    menu.classList.remove("move_content");
+    nav.classList.remove("move_nav");
+    body.classList.remove("move_content");
+});
+
+// botom empezar:
+const btnEmpezar = document.querySelector(".btnEmpezar");
+
+btnEmpezar.addEventListener("click", ()=>{
+    Swal.fire(`¡Próximamente !💻`)
 })

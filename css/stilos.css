@@ -319,7 +319,7 @@ ul li button i:hover{
     justify-content: center;
 }
 .carousel{
-    width: 75%;
+    width: 82%;
 }
 .container{
     margin-top: 50px
@@ -328,6 +328,12 @@ ul li button i:hover{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 40px
+}
+.containerDos{
+    padding: 20px
+}
+.btnEmpezar{
+    border: none
 }
 
 /* footer */
@@ -473,6 +479,13 @@ footer a {
     nav ul li a{
         color: #7a7a7a;
         font-size: 14px;
+    }
+    .carousel{
+        width: 90%;
+    }
+    .containerDos{
+        padding: 20px 5px 20px 5px;
+    
     }
 
 }

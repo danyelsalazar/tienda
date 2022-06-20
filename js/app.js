@@ -137,7 +137,7 @@ const pintarFooter = () => {
             Swal.fire({
               position: 'center',
               icon: 'success',
-              title: '¡Vacio!',
+              title: '¡Vacío!',
               showConfirmButton: false,
               timer: 1500
             });
