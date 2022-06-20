@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stilos.css">
+    <link rel="shortcut icon" href="./imagenes/wiser-icon-favicon.png" type="image/x-icon">
+    <title>Wiser</title>
+    
+</head>
+<body>
+  <header id="header">
+    <div class="container__header">
+        <div class="logo">
+            <img src="./imagenes/wiser-icon-logo.png" alt="Logotipo">
+        </div>
+        <div class="container__nav">
+            <nav id="nav">
+                <ul class="menu">
+                    <li><a href="#" class="select">INICIO</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <!-- Button trigger modal -->
+                    <li><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-cart-shopping"></i></button></li>
+                    
+
+                </ul>
+            </nav>
+
+            <div class="btn__menu" id="btn__menu"><i class="fas fa-bars"></i></div>
+        </div>
+
+    </div>
+</header>
+
+<main class="container__all" id="container_all">
+
+  <div class="cover">
+
+    <!-- INICIO WAVE-->
+
+        <div class="bg_color"></div>
+        <div class="wave w1"></div>
+        <div class="wave w2"></div>
+        
+
+    <!-- FINAL WAVE -->
+
+      <div class="container__cover">
+
+        <div class="container__info">
+            <h1>COMPUTER</h1>
+            <h2>SHOPPING</h2>
+            <P>¿Qué estas esperando para obtener tu notebook? Revisa nuestra sección de productos y ve por esa máquina que tanto has querido ¡iníciate en el mundo de la tecnología! tenemos a tu disposición dispositivos de alta gama al mejor precio del mercado.</P>
+            <input type="button" value="Empezar">
+        </div>
+          <div class="container__vector">
+            <img src="./imagenes/undraw_Code_thinking_re_gka2.svg"
+                alt="">
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="containerDos">
+  
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+          </table>
+  
+      </div>
+        <div class="modal-footer">
+          <button class="btn btn-sm btn-outline-info pagar">Finalizar compra</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- productos -->
+
+  <div class="carrusel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.computershopping.com.ar/Images/Promociones/BNR-HG-NOTEBOOKS2022.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.computershopping.com.ar/Images/Promociones/BNR-HG-PCS2022.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.computershopping.com.ar/Images/Promociones/BNR-HG-GAMING-2020.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class="container" id="productos">
+    <h5 class="h5">Notebooks</h5>
+     <div class="row" id="cards"></div>
+  </div>
+
+    <template id="template-card">
+        <div class="col-12 mb-4 col-md-4 contenedorCard">
+          <div class="card">
+              <img src="" alt="" class="img-card-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark botonComprar">Comprar</button>
+            </div>
+          </div>
+        </div>
+    </template>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$<span>5000</span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$<span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-card">
+        <div class="col-12 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>$ </p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+    </template>
+</main>
+    
+    <footer id="nosotros">
+      <div class="container__footer">
+          <div class="box__footer">
+              <div class="logo">
+                  <img src="./imagenes/wiser-icon-logo.png"
+                      alt="logotipo danyWeb">
+              </div>
+              <div class="terms">
+                  <p>¡Iníciate en el mundo de la tecnología!
+                    Si tienes más dudas sobre nosotros te invitamos a darle un ojo a nuestras redes sociales.
+                  </p>
+              </div>
+          </div>
+          <div class="box__footer">
+              <h2>Soluciones</h2>
+              <a href="#">Ventas</a>
+              <a href="#">Recomendacion</a>
+              <a href="#">Reclamos</a>
+              <a href="#">Reparaciones</a>
+          </div>
+          <div class="box__footer">
+              <h2>Compañía</h2>
+              <a href="#">Acerca de</a>
+              <a href="#">trabajos</a>
+              <a href="#">Procesos</a>
+              <a href="#">Servicios</a>
+          </div>
+          <div class="box__footer">
+              <h2>Redes sociales</h2>
+              <a href="#"><i class="fab fa-facebook-square"></i>
+                  Facebook</a>
+              <a href="#"><i class="fab fa-twitter-square"></i>
+                  Tewitter</a>
+              <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+              <a href="#"><i class="fab fa-instagram-square"></i>
+                  Instagram</a>
+          </div>
+
+      </div>
+      <div class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados © 2022 <b> DanyWeb </b></p>
+      </div>
+  </footer>
+      
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+[
+  {
+    "precio": 120000,
+    "id": 1,
+    "title": "Notebook hp i5",
+    "thumbnailUrl": "https://images.fravega.com/f300/9f61d924bbb333ab85697a7736e0ed8a.jpg.webp"
+  },
+  {
+    "precio": 88000,
+    "id": 2,
+    "title": "Notebook Lenovo i3",
+    "thumbnailUrl": "https://images.fravega.com/f300/2cca0c581600f32e27c94ad996696693.jpg.webp"
+  },
+  {
+    "precio": 117000,
+    "id": 3,
+    "title": "Notebook Legion i5",
+    "thumbnailUrl": "https://images.fravega.com/f300/432e5e99b5740ff410984e3b4444e196.jpg.webp"
+  },
+  {
+    "precio": 65000,
+    "id": 4,
+    "title": "Notebook Acer Coleron",
+    "thumbnailUrl": "https://d3ugyf2ht6aenh.cloudfront.net/stores/349/695/products/len-thinkbook15-gen2_11-328b7c987411e914be16523853982429-320-0.png"
+  },
+  {
+    "precio": 130000,
+    "id": 5,
+    "title": "Notebook hp",
+    "thumbnailUrl": "https://www.cetrogar.com.ar/media/catalog/product/c/0/c06588652.png?width=500&height=500&canvas=500,500&quality=80&bg-color=255,255,255&fit=bounds"
+  },
+  {
+    "precio": 250000,
+    "id": 6,
+    "title": "Notebook Asus i7",
+    "thumbnailUrl": "https://www.cetrogar.com.ar/media/catalog/product/x/5/x515_2.png?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500"
+  },
+  {
+    "precio": 126000,
+    "id": 1,
+    "title": "Notebook Acer i5",
+    "thumbnailUrl": "https://www.naldo.com.ar/medias/405278-2-515Wx515H?context=bWFzdGVyfHJvb3R8NDkzNzF8aW1hZ2UvanBlZ3xoMDYvaDg2Lzk2NTYzODkxMDc3NDIuanBnfGZiNGQyYjE3YzBlNjhhMDA5M2QxMWZiNDAyODI2MjU2ZWViN2FkNjc4YzMwMThjYTZiZWMyODUxNjg0NTJiYTM"
+  },
+  {
+    "precio": 220000,
+    "id": 1,
+    "title": "Notebook Acer i7",
+    "thumbnailUrl": "https://www.naldo.com.ar/medias/Method-405632-1-515Wx515H?context=bWFzdGVyfGltYWdlc3wzMTIxN3xpbWFnZS9qcGVnfGltYWdlcy9oNWUvaGFiLzk2MzU5MjI1MDk4NTQuanBnfDAzYWZmMGU3Y2I3MjgzYTE5MzE0OGQ3NDZiNDQ3YzI2YjYxMmNiYzkwMDM1NzJiYTE1MzllNTdjYWM2YjljOTU"
+  },
+  {
+    "precio": 215000,
+    "id": 6,
+    "title": "Notebook Lenovo Ryzen 5",
+    "thumbnailUrl": "https://www.naldo.com.ar/medias/405705-2-515Wx515H?context=bWFzdGVyfHJvb3R8Mzg3NTF8aW1hZ2UvanBlZ3xoODgvaGEzLzk2NTY1MTMxMDE4NTQuanBnfDE0NGU2M2VhOGZmMDk1MzBmNGYwNzg2MjdlZWI0YzkxY2U5YmU3YzE5MWVjNWZmOTBhOTAwOTA2OTBlYTRlYjA"
+  }
+]
